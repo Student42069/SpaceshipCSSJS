@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Space Wars</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="space">
+            <div class="planet-area">
+                <img class="planet" src="mars.png">
+                <img class="rocket" src="rocket.png">
+            </div>
+            <div class="control-panel">
+                <div class="control-panel__inner">
+                    <input id="password" type="password" placeholder="Enter password to unlock">
+                    <input id="unlock" type="button" value="OK">
+                    <div class="check-buttons">
+                        <input onchange="check()" class="checkbox" disabled type="checkbox">
+                        <input onchange="check()" class="checkbox" disabled type="checkbox">
+                        <input onchange="check()" class="checkbox" disabled type="checkbox">
+                        <input onchange="check()" class="checkbox" disabled type="checkbox">
+                        <input onchange="check()" class="checkbox" disabled type="checkbox">
+                        <input onchange="check()" class="checkbox" disabled type="checkbox">
+                    </div>
+                    <div class="levers">
+                        <input onchange="check()" class="levers" type="range" orient="vertical" disabled>
+                        <input onchange="check()" class="levers" type="range" orient="vertical" disabled>
+                        <input onchange="check()" class="levers" type="range" orient="vertical" disabled>
+                        <input onchange="check()" class="levers" type="range" orient="vertical" disabled>
+                        <input onchange="check()" class="levers" type="range" orient="vertical" disabled>
+                    </div>
+                    <input id="launch" type="button" value="Launch" disabled>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

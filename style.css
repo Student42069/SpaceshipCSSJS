@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+}
+
+.space {
+    background-image: url(space.png);
+    position: absolute;
+    left: 130px;
+    right: 130px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+.rocket {
+    z-index: 0;
+    height: 200px;
+    position: absolute;
+    bottom:280px;
+    left: 280px;
+    transform: rotate(30deg);
+}
+
+.planet {
+    height: 550px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    z-index: 1;
+}
+
+.control-panel {
+    background:
+    linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);
+    background-size: 100px 120px;
+    background-color: yellow;
+    position: absolute;
+    top: 20vh;
+    right: 5vw;
+    width: 400px;
+    padding: 20px;
+    border: yellow solid 2px;
+}
+
+.control-panel__inner {
+    background-color: midnightblue;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.levers {
+    display: flex;
+    flex-direction: row;
+    background-color: midnightblue;
+    border: darkgoldenrod dashed 3px;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.levers > input {
+    margin: 5px;
+}
+
+.check-buttons {
+    border: darkgoldenrod dashed 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: midnightblue;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.check-buttons > input {
+    margin: 5px;
+}
+
+#password {
+    margin: 10px 0;
+    padding: 2px;
+    width: 165px;
+    position: relative;
+    left: 40px;
+    background-color: black;
+    border-color: yellow;
+    color: lightgrey;
+    text-align: center;
+}
+
+#unlock {
+    background-color: yellow;
+    width: 30%;
+    margin: 10px 0;
+    padding: 3px 5px;
+    position: relative;
+    left: 40px;
+
+}
+
+#launch {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    height: 50px;
+    border-radius: 100%;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#launch:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.pass {
+    display: flex;
+    justify-content: center;
+}
